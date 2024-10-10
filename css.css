@@ -1,0 +1,390 @@
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+    
+    padding-top: 30px;
+  color: #2a1f5a;
+  font: 100 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: left;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function:linear;
+}
+
+
+#Logodiv{
+    font: 10 160px/0 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    
+}
+
+#Logodiv sub{
+    font-size: 40px;
+    font-weight: 1000;
+    color: rgb(70, 70, 83);
+}
+
+  .MainpageBtn {
+
+    position:absolute;
+    left: 0px;
+    
+    
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent 40%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    
+
+
+    
+    
+  }
+  .MainpageBtn:active {
+    left: 4px;
+    box-shadow: rgb(87, 71, 90) 0px 30px 60px -12px inset,
+      rgb(73, 43, 43) 0px 18px 36px -18px inset;
+      
+  }
+  
+
+
+  .MainpageBtn2 {
+    position: fixed;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 60px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent 40%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+
+
+    
+    
+  }
+  .MainpageBtn2:active {
+    
+    box-shadow: rgb(87, 71, 90) 0px 30px 60px -12px inset,
+      rgb(73, 43, 43) 0px 18px 36px -18px inset;
+      
+      
+  }
+  
+
+
+.MainpageBtn3 {
+    position:absolute;
+    left: 200px;
+    
+
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent 40%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    
+
+
+    
+    
+  }
+  .MainpageBtn3:active {
+   left: 210px;
+    box-shadow: rgb(87, 71, 90) 0px 30px 60px -12px inset,
+      rgb(73, 43, 43) 0px 18px 36px -18px inset;
+      
+  }
+
+
+
+
+  .vighbtn {
+    position:absolute;
+    
+    top: 25%;
+    left: 410px;
+    
+
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent 40%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    
+
+
+    
+    
+  }
+  .vighbtn:active {
+   left: 420px;
+    box-shadow: rgb(87, 71, 90) 0px 30px 60px -12px inset,
+      rgb(73, 43, 43) 0px 18px 36px -18px inset;
+      
+  }
+
+#Lajos{
+    gap: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    position: absolute;
+    top: 25%;
+}
+
+#dropdownMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.dropdown-list li {
+  cursor: pointer;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(252, 246, 246, 0.363);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: background-color 0.9s ease;
+}
+
+.dropdown-list li:active{
+
+  box-shadow: rgb(87, 71, 90) 0px 30px 60px -12px inset,
+  rgb(73, 43, 43) 0px 18px 36px -18px inset;
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Keyframes for rotating the image clockwise (to the right) */
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the left rotation when opening */
+.rotate-left {
+  animation: rotateLeft 0.6s ease-in-out forwards;
+}
+
+/* Apply the right rotation when closing */
+.rotate-right {
+  animation: rotateRight 0.6s ease-in-out forwards;
+}
+
+/* The rest of your button styles */
+.MainpageBtn2 {
+    position: fixed;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    width: 60px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: transparent 40%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Logo spin animation */
+@keyframes spinLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#Logodiv img.spin {
+  animation: spinLogo 1s ease-in-out;
+}
+
+/* Confetti effect */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0;
+  z-index: 9999;
+  animation: confettiFall 2.5s ease-in-out forwards;
+}
+
+@keyframes confettiFall {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(720deg);
+  }
+}
+
+/* Different colors for confetti */
+.confetti:nth-child(odd) {
+  background-color: #ff5722;
+}
+.confetti:nth-child(even) {
+  background-color: #4caf50;
+}
+
+#h11 {
+  text-align: center;
+  font-size: 5vw; /* Responsive font size based on viewport width */
+  font-optical-sizing: auto; /* Ensure optical sizing is enabled */
+  background: linear-gradient(90deg, #706f7291, #6f0df09a); /* Gradient background */
+  color: white; /* Text color */
+  padding: 20px; /* Add some padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Optional hover effect */
+#h11:hover {
+  transform: translateY(-5px); /* Lift the element slightly on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+  #h11 {
+      font-size: 4vw; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  #h11 {
+      font-size: 6vw; /* Slightly larger size for better readability on mobile */
+  }
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgba(46, 88, 88, 0.863);
+    color: burlywood;
+}
+
+header{
+    background-color: royalblue;
+    display: flex;
+    align-items: center; /*Y CORDINATE UP DOWN*/
+    justify-content: center; /*X CORDINATE LEFT RIGHT*/
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product{
+    border: 3px ridge red;
+  
+}
